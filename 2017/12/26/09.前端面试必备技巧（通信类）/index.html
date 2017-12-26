@@ -6,22 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>前端跳槽面试必备技巧（原型链类） | 帮个的博客</title>
+  <title>前端面试必备技巧（通信类） | 帮个的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="原型链类 创建对象有几种方法 原型、构造函数、实例、原型链 instanceof 的原理 new 运算符   创建对象的几种方法12var o1 = &amp;#123;name: &amp;apos;o1&amp;apos;&amp;#125;var o11 = new Object(&amp;#123;name: &amp;apos;011&amp;apos;&amp;#125;) 1234var M = function() &amp;#123;  this.n">
-<meta name="keywords" content="笔记,原型链,JavaScript">
+  <meta name="description" content="通信类 什么是同源策略及限制 前后端如何通信 如何创建 Ajax 跨域通信的几种方式  什么是同源策略及限制？同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。  Cookie、LocalStorage 和 IndexDB 无法读取 DOM 无法获得 Ajax 请求不能发送  前后端如何通信 Ajax WebSocket CORS">
+<meta name="keywords" content="面试,通信">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端跳槽面试必备技巧（原型链类）">
-<meta property="og:url" content="http://yoursite.com/2017/12/25/06.前端跳槽面试必备技巧（原型链类）/index.html">
+<meta property="og:title" content="前端面试必备技巧（通信类）">
+<meta property="og:url" content="http://yoursite.com/2017/12/26/09.前端面试必备技巧（通信类）/index.html">
 <meta property="og:site_name" content="帮个的博客">
-<meta property="og:description" content="原型链类 创建对象有几种方法 原型、构造函数、实例、原型链 instanceof 的原理 new 运算符   创建对象的几种方法12var o1 = &amp;#123;name: &amp;apos;o1&amp;apos;&amp;#125;var o11 = new Object(&amp;#123;name: &amp;apos;011&amp;apos;&amp;#125;) 1234var M = function() &amp;#123;  this.n">
-<meta property="og:image" content="http://yoursite.com/assets/imgs/prototype.png">
-<meta property="og:image" content="http://yoursite.com/assets/imgs/instanceof.png">
-<meta property="og:updated_time" content="2017-12-25T09:21:29.307Z">
+<meta property="og:description" content="通信类 什么是同源策略及限制 前后端如何通信 如何创建 Ajax 跨域通信的几种方式  什么是同源策略及限制？同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。  Cookie、LocalStorage 和 IndexDB 无法读取 DOM 无法获得 Ajax 请求不能发送  前后端如何通信 Ajax WebSocket CORS">
+<meta property="og:updated_time" content="2017-12-26T09:26:40.272Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端跳槽面试必备技巧（原型链类）">
-<meta name="twitter:description" content="原型链类 创建对象有几种方法 原型、构造函数、实例、原型链 instanceof 的原理 new 运算符   创建对象的几种方法12var o1 = &amp;#123;name: &amp;apos;o1&amp;apos;&amp;#125;var o11 = new Object(&amp;#123;name: &amp;apos;011&amp;apos;&amp;#125;) 1234var M = function() &amp;#123;  this.n">
-<meta name="twitter:image" content="http://yoursite.com/assets/imgs/prototype.png">
+<meta name="twitter:title" content="前端面试必备技巧（通信类）">
+<meta name="twitter:description" content="通信类 什么是同源策略及限制 前后端如何通信 如何创建 Ajax 跨域通信的几种方式  什么是同源策略及限制？同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。  Cookie、LocalStorage 和 IndexDB 无法读取 DOM 无法获得 Ajax 请求不能发送  前后端如何通信 Ajax WebSocket CORS">
   
     <link rel="alternative" href="/atom.xml" title="帮个的博客" type="application/atom+xml">
   
@@ -53,7 +50,7 @@
 			<img src="/assets/imgs/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">梁伟邦</a></h1>
+		  <h1 class="header-author"><a href="/">BonLeung</a></h1>
 		</hgroup>
 		
 
@@ -109,7 +106,7 @@
 				<img src="/assets/imgs/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">梁伟邦</h1>
+			  <h1 class="header-author js-header-author">BonLeung</h1>
 			</hgroup>
 			
 			
@@ -155,48 +152,63 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-06.前端跳槽面试必备技巧（原型链类）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-09.前端面试必备技巧（通信类）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      前端跳槽面试必备技巧（原型链类）
+      前端面试必备技巧（通信类）
     </h1>
   
 
         
-        <a href="/2017/12/25/06.前端跳槽面试必备技巧（原型链类）/" class="archive-article-date">
-  	<time datetime="2017-12-25T08:19:57.935Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-25</time>
+        <a href="/2017/12/26/09.前端面试必备技巧（通信类）/" class="archive-article-date">
+  	<time datetime="2017-12-26T03:04:46.220Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="原型链类"><a href="#原型链类" class="headerlink" title="原型链类"></a>原型链类</h3><ul>
-<li>创建对象有几种方法</li>
-<li>原型、构造函数、实例、原型链</li>
-<li>instanceof 的原理</li>
-<li>new 运算符</li>
+        <h3 id="通信类"><a href="#通信类" class="headerlink" title="通信类"></a>通信类</h3><ul>
+<li>什么是同源策略及限制</li>
+<li>前后端如何通信</li>
+<li>如何创建 Ajax</li>
+<li>跨域通信的几种方式</li>
 </ul>
-<hr>
-<p><strong>创建对象的几种方法</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var o1 = &#123;name: &apos;o1&apos;&#125;</span><br><span class="line">var o11 = new Object(&#123;name: &apos;011&apos;&#125;)</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var M = function() &#123;</span><br><span class="line">  this.name = &apos;o2&apos;</span><br><span class="line">&#125;</span><br><span class="line">var o2 = new M();</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var P = &#123;name: &apos;o3&apos;&#125;</span><br><span class="line">var o3 = Object.create(P)</span><br></pre></td></tr></table></figure>
+<h4 id="什么是同源策略及限制？"><a href="#什么是同源策略及限制？" class="headerlink" title="什么是同源策略及限制？"></a>什么是同源策略及限制？</h4><p>同源策略限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。</p>
+<ul>
+<li>Cookie、LocalStorage 和 IndexDB 无法读取</li>
+<li>DOM 无法获得</li>
+<li>Ajax 请求不能发送</li>
+</ul>
+<h4 id="前后端如何通信"><a href="#前后端如何通信" class="headerlink" title="前后端如何通信"></a>前后端如何通信</h4><ul>
+<li>Ajax</li>
+<li>WebSocket</li>
+<li>CORS</li>
+</ul>
 <a id="more"></a>
-<hr>
-<p><strong>原型、构造函数、实例、原型链</strong><br><img src="/assets/imgs/prototype.png" alt="原型、构造函数、实例、原型链"></p>
-<hr>
-<p><strong>instanceof 原理</strong><br><img src="/assets/imgs/instanceof.png" alt="instanceof 原理"></p>
-<hr>
-<p><strong>new 运算符，当 new Foo() 执行时：</strong></p>
-<ol>
-<li>一个新对象被创建，它继承自 Foo.prototype</li>
-<li>使用指定的参数调用构造函数 Foo，并将 this 绑定到新创建的对象。new Foo 等同于 new Foo()，只能用在 Foo 不传递任何参数的情况。</li>
-<li>如果构造函数返回了一个“对象”，那么这个对象会取代整个 new 出来的结果。如果构造函数没有返回对象，那么 new 出现的结果为步骤1创建的对象</li>
-</ol>
+<h4 id="如何创建-Ajax"><a href="#如何创建-Ajax" class="headerlink" title="如何创建 Ajax"></a>如何创建 Ajax</h4><ul>
+<li>XMLHttpRequest 对象的工作流程</li>
+<li>兼容性处理</li>
+<li>事件的触发提交</li>
+<li>事件的触发顺序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">util.json = function(options) &#123;</span><br><span class="line">  var opt = &#123;</span><br><span class="line">    url: &apos;&apos;,</span><br><span class="line">    type: &apos;get&apos;,</span><br><span class="line">    data: &#123;&#125;,</span><br><span class="line">    success: function() &#123;&#125;,</span><br><span class="line">    error: function() &#123;&#125;,</span><br><span class="line">  &#125;;</span><br><span class="line">  opt = Object.assign(opt, options);</span><br><span class="line">  if (opt.url) &#123;</span><br><span class="line">    var xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject(&apos;Micorsoft.XMLHTTP&apos;);</span><br><span class="line">    var data = opt.data,</span><br><span class="line">        url = opt.url,</span><br><span class="line">        type = opt.type.toUpperCase(),</span><br><span class="line">        dataArr = [];</span><br><span class="line">    for(var k in data) &#123;</span><br><span class="line">      dataArr.push(k + &apos;=&apos; + data[k]);</span><br><span class="line">    &#125;</span><br><span class="line">    if (type === &apos;GET&apos;) &#123;</span><br><span class="line">      url = url + &apos;?&apos; + dataArr.join(&apos;&amp;&apos;);</span><br><span class="line">      xhr.open(type, url.replace(/\?$/g, &apos;&apos;), true);</span><br><span class="line">      xhr.send();</span><br><span class="line">    &#125;</span><br><span class="line">    if (type === &apos;POST&apos;) &#123;</span><br><span class="line">      xhr.open(type, url, true);</span><br><span class="line">      xhr.setRequestHeader(&apos;Content-Type&apos;, &apos;application/x-www-form-urlencoded&apos;);</span><br><span class="line">      xhr.send(dataArr.join(&apos;&amp;&apos;));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    xhr.onload = function() &#123;</span><br><span class="line">      var res = xhr.responseText;</span><br><span class="line">      if (xhr.status === 200 || xhr.status === 304) &#123;</span><br><span class="line">        if (opt.success &amp;&amp; opt.success instanceof Function) &#123;</span><br><span class="line">          if (typeof res === &apos;string&apos;) &#123;</span><br><span class="line">            res = JSON.parse(res);</span><br><span class="line">            opt.success.call(xhr, res);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        if (opt.error &amp;&amp; opt.error instanceof Function) &#123;</span><br><span class="line">          opt.error.call(xhr, res);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="跨域通信的几种放方式"><a href="#跨域通信的几种放方式" class="headerlink" title="跨域通信的几种放方式"></a>跨域通信的几种放方式</h4><ul>
+<li>JSONP</li>
+<li>Hash</li>
+<li>postMessage</li>
+<li>WebSocket</li>
+<li>CORS</li>
+</ul>
+<h5 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">util.jsonp = function(url, onsuccess, onerror, charset) &#123;</span><br><span class="line">  var callbackNAme = util.getName(&apos;tt_player&apos;);</span><br><span class="line">  window[callbackName] = function() &#123;</span><br><span class="line">    if (onsuccess &amp;&amp; onsuccess instanceof Function) &#123;</span><br><span class="line">      onsuccess(arguments[0])</span><br><span class="line">    &#125; </span><br><span class="line">  &#125;</span><br><span class="line">  var script = util.createScript(url + &apos;&amp;callback=&apos; + callbackName, charset);</span><br><span class="line">  script.onload = script.onreadystatechange = function() &#123;</span><br><span class="line">    if (!script.readyState || /loaded|complete/.test(script.readyState)) &#123;</span><br><span class="line">      script.onload = script.onreadystatechange = null;</span><br><span class="line">      if (script.parentNode) &#123;</span><br><span class="line">        script.parentNode.removeChild(script);</span><br><span class="line">      &#125;</span><br><span class="line">      // 删除函数或变量</span><br><span class="line">      window[callbackName] = null;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  script.onerror = function() &#123;</span><br><span class="line">    if (onerror &amp;&amp; onerror instanceof Function) &#123;</span><br><span class="line">      onerror();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">  document.getElementsByTagName(&apos;head&apos;)[0].appendChild(script);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Hash"><a href="#Hash" class="headerlink" title="Hash"></a>Hash</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 利用 hash，场景是当前页面 A 通过 iframe 或 frame 嵌入了跨域的页面 B</span><br><span class="line">// 在 A 中的伪代码如下：</span><br><span class="line">var B = document.getElementsByTagName(&apos;iframe&apos;);</span><br><span class="line">B.src = B.src + &apos;#&apos; + &apos;data&apos;;</span><br><span class="line">// 在 B 中的伪代码如下：</span><br><span class="line">window.onhashchange = function() &#123;</span><br><span class="line">  var data = window.location.hash;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="postMessage"><a href="#postMessage" class="headerlink" title="postMessage"></a>postMessage</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 窗口A（http://A.com）向跨域的窗口B（http://B.com）发送信息</span><br><span class="line">Bwindow.postMessage(&apos;data&apos;, &apos;http://B.com&apos;);</span><br><span class="line">// 在窗口B中监听</span><br><span class="line">Awindow.addEventListener(&apos;message&apos;, function(event) &#123;</span><br><span class="line">  console.log(event.origin);  // http://A.com</span><br><span class="line">  console.log(event.sourse);  // Bwindow</span><br><span class="line">  console.log(event.data);  // data</span><br><span class="line">&#125;, false)</span><br></pre></td></tr></table></figure>
+<h5 id="websocket"><a href="#websocket" class="headerlink" title="websocket"></a>websocket</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var ws = new WebSocket(&apos;wss://echo.websocket.org&apos;);</span><br><span class="line"></span><br><span class="line">ws.open = function(event) &#123;</span><br><span class="line">  console.log(&apos;Connection open ...&apos;);</span><br><span class="line">  ws.send(&apos;Hello WebSockets!&apos;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ws.onmessage = function(event) &#123;</span><br><span class="line">  console.log(&apos;Received Message:&apos; + event.data);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">wx.onclose = function(event) &#123;</span><br><span class="line">  console.log(&apos;Connection closed&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h5><p><a href="http://www.ruanyifeng.com/blog/2016/04/cors.html" target="_blank" rel="noopener">CORS参考资料</a></p>
 
       
 
@@ -241,15 +253,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">原型链</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">通信</a>
         		</li>
       		
 		</ul>
@@ -305,7 +313,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/25/06.前端跳槽面试必备技巧（原型链类）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/26/09.前端面试必备技巧（通信类）/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -320,8 +328,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2017/12/25/05.前端跳槽面试必备技巧（HTTP协议类）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端跳槽必备技巧（HTTP协议类）</div>
+    <a href="/2017/12/26/08.前端面试必备技巧（面向对象类）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端面试必备技巧（面向对象类）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -364,7 +372,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 梁伟邦
+    		&copy; 2017 BonLeung
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -443,6 +451,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
@@ -455,11 +471,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -467,11 +479,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">通信</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>前端面试跳槽必备技巧（CSS篇） | 帮个的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="页面布局小结 语义化掌握到位 页面布局理解深刻 CSS基础知识扎实 思维灵活且积极上进 代码书写规范  页面布局的变通 三栏布局 左右宽度固定，中间自适应 上下高度固定，中间自适应   两栏布局 左宽度固定，右自适应 右宽度固定，左自适应 上高度固定，下自适应 下高度固定，上自适应">
-<meta name="keywords" content="面试,笔记,CSS">
+  <meta name="description" content="页面布局 题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为300px，中间自适应  浮动解决方案：12345678910111213.left &amp;#123;    width: 300px;    float: left;    background: red;&amp;#125;.center &amp;#123;    background: yellow;&amp;#125;.right &amp;#123;">
+<meta name="keywords" content="笔记,面试,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端面试跳槽必备技巧（CSS篇）">
-<meta property="og:url" content="http://yoursite.com/2017/12/25/03.前端跳槽面试必备技巧（CSS篇）/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/12/25/04.前端面试必备技巧（CSS篇）/index.html">
 <meta property="og:site_name" content="帮个的博客">
-<meta property="og:description" content="页面布局小结 语义化掌握到位 页面布局理解深刻 CSS基础知识扎实 思维灵活且积极上进 代码书写规范  页面布局的变通 三栏布局 左右宽度固定，中间自适应 上下高度固定，中间自适应   两栏布局 左宽度固定，右自适应 右宽度固定，左自适应 上高度固定，下自适应 下高度固定，上自适应">
-<meta property="og:updated_time" content="2017-12-25T07:25:52.088Z">
+<meta property="og:description" content="页面布局 题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为300px，中间自适应  浮动解决方案：12345678910111213.left &amp;#123;    width: 300px;    float: left;    background: red;&amp;#125;.center &amp;#123;    background: yellow;&amp;#125;.right &amp;#123;">
+<meta property="og:updated_time" content="2017-12-26T02:39:04.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试跳槽必备技巧（CSS篇）">
-<meta name="twitter:description" content="页面布局小结 语义化掌握到位 页面布局理解深刻 CSS基础知识扎实 思维灵活且积极上进 代码书写规范  页面布局的变通 三栏布局 左右宽度固定，中间自适应 上下高度固定，中间自适应   两栏布局 左宽度固定，右自适应 右宽度固定，左自适应 上高度固定，下自适应 下高度固定，上自适应">
+<meta name="twitter:description" content="页面布局 题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为300px，中间自适应  浮动解决方案：12345678910111213.left &amp;#123;    width: 300px;    float: left;    background: red;&amp;#125;.center &amp;#123;    background: yellow;&amp;#125;.right &amp;#123;">
   
     <link rel="alternative" href="/atom.xml" title="帮个的博客" type="application/atom+xml">
   
@@ -50,7 +50,7 @@
 			<img src="/assets/imgs/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">梁伟邦</a></h1>
+		  <h1 class="header-author"><a href="/">BonLeung</a></h1>
 		</hgroup>
 		
 
@@ -106,7 +106,7 @@
 				<img src="/assets/imgs/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">梁伟邦</h1>
+			  <h1 class="header-author js-header-author">BonLeung</h1>
 			</hgroup>
 			
 			
@@ -152,7 +152,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-03.前端跳槽面试必备技巧（CSS篇）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-04.前端面试必备技巧（CSS篇）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -164,7 +164,7 @@
   
 
         
-        <a href="/2017/12/25/03.前端跳槽面试必备技巧（CSS篇）/" class="archive-article-date">
+        <a href="/2017/12/25/04.前端面试必备技巧（CSS篇）/" class="archive-article-date">
   	<time datetime="2017-12-25T01:58:51.913Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-25</time>
 </a>
         
@@ -172,7 +172,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="页面布局小结"><a href="#页面布局小结" class="headerlink" title="页面布局小结"></a>页面布局小结</h3><ul>
+        <h4 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h4><blockquote>
+<p>题目：假设高度已知，请写出三栏布局，其中左栏、右栏宽度各为300px，中间自适应</p>
+</blockquote>
+<h5 id="浮动解决方案："><a href="#浮动解决方案：" class="headerlink" title="浮动解决方案："></a>浮动解决方案：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.left &#123;</span><br><span class="line">    width: 300px;</span><br><span class="line">    float: left;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.center &#123;</span><br><span class="line">    background: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    width: 300px;</span><br><span class="line">    float: right;</span><br><span class="line">    background:</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="绝对定位解决方案："><a href="#绝对定位解决方案：" class="headerlink" title="绝对定位解决方案："></a>绝对定位解决方案：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 0;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.center &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 300px;</span><br><span class="line">    right: 300px;</span><br><span class="line">    background: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    right: 0;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="flexbox-解决方案"><a href="#flexbox-解决方案" class="headerlink" title="flexbox 解决方案"></a>flexbox 解决方案</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    flex: 0 0 200px;</span><br><span class="line">    width: 200px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.center &#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">    background: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    flex: 0 0 300px;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="表格布局解决方案"><a href="#表格布局解决方案" class="headerlink" title="表格布局解决方案"></a>表格布局解决方案</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">    display: table;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100px;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.center &#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    background: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    display: table-cell;</span><br><span class="line">    width: 300px;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="网格布局解决方案"><a href="#网格布局解决方案" class="headerlink" title="网格布局解决方案"></a>网格布局解决方案</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">    display: grid;</span><br><span class="line">    width: 100%;</span><br><span class="line">    grid-template-rows: 100px;</span><br><span class="line">    grid-template-columns: 300px auto 300px;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.center &#123;</span><br><span class="line">    background: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="页面布局小结"><a href="#页面布局小结" class="headerlink" title="页面布局小结"></a>页面布局小结</h3><ul>
 <li>语义化掌握到位</li>
 <li>页面布局理解深刻</li>
 <li>CSS基础知识扎实</li>
@@ -301,11 +309,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面试</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -365,7 +373,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/25/03.前端跳槽面试必备技巧（CSS篇）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/25/04.前端面试必备技巧（CSS篇）/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -379,7 +387,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/25/04.前端跳槽面试必备技巧（DOM事件篇）/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/25/05.前端面试必备技巧（DOM事件篇）/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -389,8 +397,8 @@
     </a>
   
   
-    <a href="/2017/12/22/02.常用 HTTP 状态码/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">常用 HTTP 状态码</div>
+    <a href="/2017/12/23/03.前端面试必备技巧（关于面试）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端面试必备技巧（关于面试）</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -433,7 +441,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 梁伟邦
+    		&copy; 2017 BonLeung
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -512,6 +520,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
@@ -524,11 +540,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -536,11 +548,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">通信</a>
               </li>
             
             <div class="clearfix"></div>
